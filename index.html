@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+ <!-- reiterating now that i haven't been coding for very long lol -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fishfarm</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/images/fishtrout.gif">
+    <div class="crt"></div>
+    <link href="/style-my-tooltips.css" rel="stylesheet" type="text/css">
+  </head>
+  
+<!-- visible stuff -->
+<header><img src="/images/ffbanner.png" alt="fishfarmbanner" class="responsive"></header>
+  
+<nav class="navbar">
+  <ul>
+    <li><a href="https://fishfarm.neocities.org/">☆ home</a></li>
+    <li><a href="https://fishfarm.neocities.org/interests">☆ interests</a></li>
+    <li><a href="https://fishfarm.neocities.org/journal">☆ journal</a></li>
+    <li><a href="https://fishfarm.neocities.org/art">☆ art</a></li> 
+    <li><a href="https://fishfarm.neocities.org/resources">☆ resources</a></li>
+  </ul>
+</nav>
+
+<!-- fishoverlays -->
+  <div class="bfish">
+    <img src="/images/fish/blue.png" height="105" width="110" alt="blue and yellow tropical fish" title="blub blub"/>
+  </div>
+  <div class="ofish">
+    <img src="/images/fish/orange.png" height="130" width="220" alt="orange fish" title="welcome to fish farm!"/>
+  </div>
+  
+<!-- bodyodyody -->
+<body>
+    
+<div class="box1 white">
+  <div class="b1">
+    <h3><b>☆ about ☆</b></h3>
+    <p>hello! fishfarm is a place to share my art and interests (music, nature, and lesbian media). i'm a designer who's completely new to coding, so this website is experimental!!!</p>
+      <p class=small> <a href="https://neocities.org/site/fishfarm">neocities profile</a> ☆ 
+      <a href="https://fishfarm.atabook.org/?page=1">my guestbook</a> ☆ <a href="https://artfight.net/~dillionsart">artfight</p>
+      <a href="https://fishfarm.neocities.org/"><img src="https://fishfarm.neocities.org/images/fishfarmbutton.gif" title="site button!"></a>
+  </div>
+   
+  <div class="b2">
+    <small>
+      <p>☆ updates</p>
+        <hr class="dotted">
+      <p>8.24 / updated interests, added a journal entry, and added new artfight pieces</p>
+        <hr class="dotted">
+      <p>4.5 / added new recent art to the gallery </p>
+        <hr class="dotted">
+      <p>3.23 / made some changes to my interests page >:) </p>
+        <hr class="dotted">
+      <p>3.20 / published the <a href="https://fishfarm.neocities.org/art">art</a> page</p>
+        <hr class="dotted">
+      <p>3.14 / added journal page / added <a href="https://fishfarm.atabook.org/?page=1">guestbook</a></p>
+        <hr class="dotted">
+      <p>3.13 / added <a href="http://manos.malihu.gr/style-my-tooltips-jquery-plugin">tooltips!!</a> and alt text</p>
+        <hr class="dotted">
+      <p>3.12 / added interests page / added overlays</p>
+        <hr class="dotted">
+      <p>3.11 / added gallery section / added updates box / added resources page</p>
+        <hr class="dotted">
+      <p>3.10 / changed homepage banner</p>
+        <hr class="dotted">
+      <p>3.9 / site created!</p>
+    </small>  
+  </div>
+  
+</div>
+    
+<div class="box1 white">
+  <img src="/images/blinkies/pronouns.gif">
+  <img src="/images/blinkies/lesbian.gif">
+  <img src="/images/blinkies/mygf.gif">
+  <img src="/images/blinkies/transrightsnow.gif">
+  <img src="/images/blinkies/e38.gif">
+</div>
+  
+  <!-- image modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  
+<div class="box1 white">
+  <h3><b>☆ gallery ☆</b></h3>
+    <img src="/images/msportrait.PNG" height="160" width="150" alt="Monochromatic blue portrait made in MS Paint." title="portrait made in MS Paint.">
+    <img src="/images/mseye.PNG" height="160" width="160" alt="Monochromatic red eye portrait made in MS Paint." title="eye made in MS Paint.">
+    <img src="/images/vinhs.JPG" height="160" width="155" alt="Portrait of my OC Vin made in Procreate." title="portrait of one of my ocs."/>
+    <img id="myImg" src="https://fishfarm.neocities.org/images/art/selfapr25.JPG" height="160" width="160" alt="self portrait made in Procreate. i wanted to practice expressions, so i do look angry, but i'm not :D " title="self portrait, april 2025."/>
+  <p>i like drawing my OCs and fanart (for media i like, and for other people's characters).</p>
+</div>
+  
+  
+
+<!-- just the tips (tooltips) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/jquery.style-my-tooltips.js"></script>
+<script>
+		jQuery.noConflict();
+		(function($){
+			$(document).ready(function(){
+				$("[title]").style_my_tooltips({ 
+					tip_follows_cursor: true, //boolean
+					tip_delay_time:10, //milliseconds
+					tip_fade_speed:10 //milliseconds
+				});
+				//dynamically added elements demo function
+				$("a[rel='add new element']").click(function(e){
+					e.preventDefault();
+					$(this).attr("title","Add another element").parent().after("<p title='New paragraph title'>This is a new paragraph! Hover to see the title.</p>");
+				});
+			});
+		})(jQuery);
+	</script>
+  
+<!-- modals -->
+  <script>
+  // gets modal
+var modal = document.getElementById("myModal");
+
+// get the image and inserts it inside the modal - use its alt text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// (x) to close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script> 
+
+</body>

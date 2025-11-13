@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  
+<html>
+  
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fishfarm</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    
+    <link rel="icon" type="image/x-icon" href="/images/fishtrout.gif">
+    <div class="crt"></div>
+    
+    <link href="/style-my-tooltips.css" rel="stylesheet" type="text/css">
+    
+</head>
+  
+<!-- visible stuff -->
+  
+  <header><img src="/images/ffbanner.png" alt="fishfarmbanner" class="responsive"></header>
+  
+<nav class="navbar">
+  <ul>
+    <li><a href="https://fishfarm.neocities.org/">☆ home</a></li>
+    <li><a href="https://fishfarm.neocities.org/interests">☆ interests</a></li>
+    <li><a href="https://fishfarm.neocities.org/journal">☆ journal</a></li>
+    <li><a href="https://fishfarm.neocities.org/art">☆ art</a></li>   
+    <li><a href="https://fishfarm.neocities.org/resources">☆ resources</a></li>
+  </ul>
+</nav>
+  
+<!-- bodyodyody -->
+<body>
+    
+<div class="box1 white">
+  
+<button id="fontButton">change font</button>
+    
+  <h3><b>☆ journal / thought documentation ☆</b></h3>
+  
+    <div id="b4">
+		<img src="https://fishfarm.neocities.org/images/blog/dcritterportrait.JPG" style="margin-right: 20px; float:left; height: 50px;">
+                        fishfarm<br>
+                        8 / 24 / 25 <br>
+                        feeling: tired and eggsited XD <br>
+        <p class="text">i had some really cool work opportunities over the summer, and school has started again! i'm liking all my classes so far, but i anticipate being really busy, as usual. i'm especially excited for painting and postmodernism (art history). please check out <a href="https://en.wikipedia.org/wiki/Piss_Christ">piss christ</a> for an example. here are some cool cloud pics from the summer:
+          <br><img src="https://fishfarm.neocities.org/images/blog/cloud1.jpg" style="margin-top: 30px; height: 448px; width: 336px;"><img src="https://fishfarm.neocities.org/images/blog/cloud2.jpg" style="margin-top: 30px; margin-left: 25px; height: 448px; width: 336px;">
+  </div>
+  
+  <div id="b4">
+		<img src="https://fishfarm.neocities.org/images/blog/dcritterportrait.JPG" style="margin-right: 20px; float:left; height: 50px;">
+                        fishfarm<br>
+                        5 / 2 / 25 <br>
+                        feeling: AAAAA <br>
+        <p class="text">the end of the semester has been wild, but it's almost over! finals is next week. i've been super sleep deprived as a result. here's a list of things i'm excited to finally have time for (ˆ⌣ˆ)
+          <br>☆ hanging out with my gf & friends
+          <br>☆ hiking, swimming, excercising regularly
+          <br>☆ drawing more (artfight specifically)
+          <br>☆ figuring out github, working on my shrines
+          <br>☆ updating my portfolio
+  </div>
+  
+  <div id="b4">
+		<img src="https://fishfarm.neocities.org/images/blog/dcritterportrait.JPG" style="margin-right: 20px; float:left; height: 50px;">
+                        fishfarm<br>
+                        3 / 25 / 25 <br>
+                        feeling: productive, but sleepy ᶻ 𝗓 𐰁 <br>
+        <p class="text">after like seven years of being tangentially involved in the furry fandom, being on neocities finally inspired me to make a little critter sona for myself haha. you can see the full little guy on my interests page.
+        <br> 
+        <br>i’m trying to break out of the mindset that every one of my pages has to look stylistically consistent. i tried experimenting with a more creative layout on my art page, but i’ve been unable to ensure that it’s responsive for mobile devices. to get more practice with this, i think my next project will be a specific shrine for my interests page. i’ll probably make one for the movie Bound first because i think it’s severely underrated in the lesbian community :)
+  </div>
+  
+  <div id="b4">
+		<img src="https://fishfarm.neocities.org/images/blog/dpixelportrait.GIF" style="margin-right: 20px; float:left; height: 50px;">
+                        fishfarm<br>
+                        3 / 17 / 25 <br>
+                        feeling: busy (⊙︿⊙) <br>
+        <p class="text"> classes started again so updates will unfortunately be slowing down. i'm making progress on my art page though, hope to get it finished this week.</p>   
+  </div>
+  
+  <div id="b4">
+		<img src="https://fishfarm.neocities.org/images/blog/dpixelportrait.GIF" style="margin-right: 20px; float:left; height: 50px;">
+                        fishfarm<br>
+                        3 / 14 / 25 <br>
+                        feeling: happy!!<br>
+        <p class="text"> i started learning basic html six days ago. i'm really proud of everything i've learned so far! making a website is very similar to how stardew valley makes me feel. endless tasks to do, and i constantly consult a "wiki" (w3schools).</p>   
+  </div>
+
+</div>
+  
+<script>
+const textElements = document.querySelectorAll('.text');
+  const fontButton = document.getElementById('fontButton');
+  const fonts = ['Courier', 'Walter Turncoat'];
+  let currentFontIndex = 0;
+
+  fontButton.addEventListener('click', () => {
+    currentFontIndex = (currentFontIndex + 1) % fonts.length;
+    textElements.forEach(element => {
+      element.style.fontFamily = fonts[currentFontIndex];
+    });
+  });
+  
+</script>
+
+</body>
+

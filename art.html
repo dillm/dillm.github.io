@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fishfarm</title>
+    <link href="/artstyle.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/images/fishtrout.gif">
+    <div class="crt"></div>
+    <link href="/style-my-tooltips.css" rel="stylesheet" type="text/css">
+  </head>
+  
+<body>
+
+<!-- overlays -->
+<div style="position:absolute; margin-left: 5em; margin-top: 95px; margin-bottom: 1877px; animation: float 3s ease-in-out infinite; z-index: 2;">
+	<img style="width: 534px; height: 123px;transform: rotate(6deg);" src="/images/art/labels/artwork.png" alt="Artwork Gallery">
+</div>
+		
+<div style="position: absolute; width: 20em; height: 25em; right: 1%; top: 50px; z-index: 1; animation: float 3s ease-in-out infinite;">
+	<img class=grow src="/images/art/ramsay.png" height="100%" width="100%" alt="My human character Ramsay singin on a microphone." title="ramsay singin, 2024"/>
+</div>
+		
+<div style="position:absolute; margin-left: 50px; margin-top: 420px; margin-bottom: 1877px; animation: float 3s ease-in-out infinite; z-index: 2;">
+	<img class=grow style="width: 246px; height: 298px;" src="images/art/cry.GIF" alt="Animation of one of my characters cryin." title="sad critter, 2021">
+</div>
+		
+<!-- images -->
+<div class="c1">
+	<div class="c2">
+		<img style="margin-top: 9em;" src="/images/art/msportrait.PNG" height="52%" width="52%" alt="Monochromatic blue portrait made in MS Paint." title="portrait made in MS paint, dec. 2023"/>
+		<img style="float: right; margin-top: 7em;" src="/images/art/mseye.PNG" height="45%" width="45%" alt="Monochromatic red eye portrait made in MS Paint." title="eye made in MS Paint, dec. 2023"/>	
+		<img style="float: right; margin-top: -7.4em;" src="/images/art/portrait1.jpg" height="45%" width="45%" alt="Monochromatic blue portrait made in MS Paint." title="self portrait, 2022"/>
+				
+		<p class="navbar" style="color: white; font-size: 25px;">
+			<a href="https://fishfarm.neocities.org/">home</a>
+			<a href="https://fishfarm.neocities.org/interests">interests</a>
+			<a href="https://fishfarm.neocities.org/journal">journal</a>
+			<br><a href="https://fishfarm.neocities.org/art"><span style="color: #FFCC00; text-decoration-line: underline;">art</span></a>
+			<a href="https://fishfarm.neocities.org/resources">resources</a>
+    </p>
+	</div>
+</div>
+		
+<!-- artfight -->
+<div style="position:absolute; margin-left: 5em; margin-top: -3em; z-index: 5; animation: float 3s ease-in-out infinite;">
+	<img style="width: 490px; height: 113px; transform: rotate(6deg);" src="https://fishfarm.neocities.org/images/art/labels/artfight.png">
+</div>
+		
+<marquee style="max-width: 150em; margin-left: -2em; margin-top: 1em;" class="diagonal" direction="left" scrollamount="10">
+  <img src="/images/art/aliens.png" height="414px" width="300px" alt="Green alien with pink hair hugs blue alien with purple hair." title="2025"/>
+  <img src="/images/art/azalea.jpg" height="414px" width="320px" alt="Strong lesbian wearing a cat tank top." title="2025"/>
+  <img src="/images/art/kris24.JPG" height="414px" width="285px" alt="Green-haired chainsaw man character floating." title="2024"/>
+  <img src="/images/art/mal24.JPG" height="414px" width="402px" alt="Angry readhead portrait." title="2024"/>
+  <img src="/images/art/vintage20.GIF" height="414px" width="414px" alt="Animated halloween dog." title="2020"/>
+  <img src="/images/art/killian23.JPG" height="414px" width="390px" alt="Regal merperson." title="2023"/>
+	<img src="/images/art/puck24.JPG" height="414px" width="490px" alt="Lounging fancy elf." title="2024"/>
+	<img src="/images/art/sharkdog20.JPG" height="414px" width="306px" alt="Sitting shark dog illustration." title="2020"/>
+</marquee>
+		
+<!-- coming soon -->
+<div class="c1" style="height: 20em;">
+	<p style="color: #FFF; text-align: center; font-size: 30px; padding-top: 4em;">coming soon...</p>
+				
+	<div style="z-index: 2; text-align: center; padding-top: -40px;">
+		<img style="width: 630px; height: 101px;" src="/images/art/labels/ocs.png" alt="Characters">
+	</div>
+	<div style="z-index: 2; text-align: center; margin-top: -40px">
+		<img style="width: 372px; height: 101px;" src="/images/art/labels/fanart.png" alt="Fanart">
+	</div>
+</div>
+
+  
+<!-- just the tips (tooltips) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="/jquery.style-my-tooltips.js"></script>
+<script>
+		jQuery.noConflict();
+		(function($){
+			$(document).ready(function(){
+				$("[title]").style_my_tooltips({ 
+					tip_follows_cursor: true, //boolean
+					tip_delay_time:10, //milliseconds
+					tip_fade_speed:10 //milliseconds
+				});
+				//dynamically added elements demo function
+				$("a[rel='add new element']").click(function(e){
+					e.preventDefault();
+					$(this).attr("title","Add another element").parent().after("<p title='New paragraph title'>This is a new paragraph! Hover to see the title.</p>");
+				});
+			});
+		})(jQuery);
+ 
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+  <head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fishfarm</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <div class="crt"></div>
+    
+  </head>
+    <link rel="icon" type="image/x-icon" href="/images/fishtrout.gif">
+  
+  <!-- visible stuff -->
+<div style="position:absolute; margin-left: 350px; margin-top: 510px; margin-bottom: 1877px; z-index: 2;">
+	<img style="width: 534px; height: 500px;transform: rotate(6deg);" src="https://fishfarm.neocities.org/images/interests/dance.GIF" alt="Me as a critter dancing.">
+</div>
+  
+<header><img src="/images/ffbanner.png" alt="fishfarmbanner" class="responsive"></header>
+  
+<nav class="navbar">
+  <ul>
+    <li><a href="https://fishfarm.neocities.org/">☆ home</a></li>
+    <li><a href="https://fishfarm.neocities.org/interests">☆ interests</a></li>
+    <li><a href="https://fishfarm.neocities.org/journal">☆ journal</a></li>
+    <li><a href="https://fishfarm.neocities.org/art">☆ art</a></li>  
+    <li><a href="https://fishfarm.neocities.org/resources">☆ resources</a></li>
+  </ul>
+</nav>
+  
+<body>
+
+<div class="box1 white">
+   <img id="myImg" src="https://fishfarm.neocities.org/images/interestscollege.jpg" alt="A collage of my interests, including: music (Toby Fox; Soft Cell; the Sonic Mania Soundtrack; Earth, Wind & Fire), TV shows (Community, Killing Eve, The Haunting of Bly Manor), movies (Bound (1996), But I’m a Cheerleader (1999)), “internet shows” (Dimension20, Drawfee), video games (Stardew Valley, Minecraft), and miscellaneous things like wildlife (the American Woodcock, the Cedar Waxwing) and Garfield." style="width:100%;">
+</div>
+
+<!-- image modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+  
+<!-- interests box -->
+<div class="box1 white">
+  <div class="b1">
+    <h3><b>☆ interests ☆</b></h3>
+
+    <details>
+      <summary>watching...</summary>
+      <p class=small>
+      <a>recent:</a> Drawfee, Dimension 20's Cloudward Ho!
+      <br><a>favorite shows:</a> Community, Killing Eve, <br>The Haunting of Bly Manor, Fleabag, Severance
+      <br><a>favorite movies:</a> Bound, But I’m a Cheerleader, The Handmaiden</p>
+    </details>
+  
+    <details>
+      <summary>listening to...</summary>
+      <p class=small>
+      <a>recent:</a> MBMBAM, Rose Royce, Toby Fox, Was (Not Was), <br>David Bowie, the Balatro soundtrack
+      <br><a>top genres:</a> disco, new wave, video game music, funk, rock</p>
+    </details>
+  
+    <details>
+      <summary>reading...</summary>
+      <p class=small><a>2025 book total:</a> 20 
+      <br><a>current:</a> <i>Chain-Gang All-Stars</i> by Nana Kwame Adeji-Brenyah</p>
+    </details>
+
+  </div>
+</div>
+  
+<div class="b5">
+   <marquee direction="left" marquee scrollamount="5" style="margin-bottom: -10px;"><font size="2">
+      <p>playing... ☆do your dance by rose royce☆</p>
+    </font></marquee>
+      <audio controls="" autoplay="false" loop="" class="audioplayer">
+      <source src="https://dl.dropbox.com/scl/fi/agfdr737cg7hf04kdbnb2/Do-Your-Dance.mp3?rlkey=1it8nxxcygp75a11vcxue2mng&st=nvx32mqk&dl=0">
+      </audio>
+</div>
+   
+<!-- jscript -->
+<script>
+  // gets modal
+var modal = document.getElementById("myModal");
+
+// get the image and inserts it inside the modal - use its alt text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// (x) to close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script> 
+   
+</body>
